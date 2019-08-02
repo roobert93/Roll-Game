@@ -170,7 +170,7 @@ const NumberGame = () => {
        <div id="withdrawarea"> <input
           id="withdraw"
           type="number"
-          placeholder="Deposit value"
+          placeholder="Withdraw value"
           value={moneywithdraw}
           onChange={moneychange2}
         ></input>
