@@ -1,13 +1,200 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+#btn:hover{
+    color:green;
+   background-color: black;
+   transition:  background-color 0.1s;
+
+    
+
+}
+#btn{
+  opacity: 0.5;
+  position: relative;
+  left: 45%;
+
+   
+}
+#maked{
+   padding-top: 10px; 
+   padding-left: 4px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+input{
+    height: 30px;
+    margin-left: 15px;
+    
+}
+#btnok{
+    height: 36px;
+    font-size: 14px;
+    border:2px solid black;
+   padding-top: 0px;
+    
+   
+}
+#btnok:hover{
+    background-color: black;
+    color:green;
+}
+#inputDeposit{
+    border:2px solid black;
+    border-right: none;
+   
+}
+
+body {
+    background-color: black;
+    background-image: url('./180413130339-02-las-vegas-casinos.jpg')
+}
+h1{
+    margin-left: 15px;
+}
+#btnreset{
+     height: 36px;
+    font-size: 14px;
+    border:2px solid black;
+   padding-top: 0px;
+    
+
+}
+#btnreset:hover{
+    background-color: black;
+    color:red;
+}
+#btnstart{
+margin-left: 15px;
+    height: 65px;
+    width: 100px;
+    background-color: green;
+    border: 3px solid black;
+    font-size: 22px;
+    border-radius: 15%;
+}
+#btnstart:hover{
+    color:green;
+    background-color: black;
+    transition:  background-color 0.1s;
+    border: 1px solid white;
+}
+
+h3{
+    border:3px solid black;
+    width: 307px;
+    height: 75px;
+    margin-left: 10px;
+    padding-left: 5px;
+    font-size: 30px;
+    
+    
+   
+}
+
+#rollh{
+    height: 37px;
+    margin-left: 15px;
+    margin-top: 40px;
+}
+.inputgame{
+    width: 100px;
+    height: 100px;
+    padding: 0px;
+    margin-right: 1px;
+    margin-left: 5px;
+    font-size: 60px;
+    text-align: center;
+}
+
+#roll{
+    width: 180px;
+    height: 169px;
+  
+   border:7px solid black;
+    margin-left: 5px;
+    font-size: 60px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.231);
+    
+  
+   
+}
+#roll:hover{
+    background-color: black;
+    color:white;
+}
+
+
+#bank{
+padding-left: 20px;
+ width:250px;
+ height: auto;
+ position: relative;
+ top: 16px;
+}
+#inputscore{
+    height: 60px;
+    
+    padding-top: 10px;
+}
+#totalscore{
+    font-size: 30px;
+    width: 40px;
+    border:10px solid green;
+    text-align: center;
+}
+#return{
+    background-color: red;
+    border:3px solid black;
+    height: 48px;
+    font-size: 20px;
+   margin-left: 1402px;
+   border-radius: 50%;
+   position: relative;
+   bottom: 10px;
+   
+}
+#return:hover{
+    
+    background-color: black;
+    color:red;
+}
+#rollgame{
+    font-size: 50px;
+    text-align: center;
+    background-color: rgba(220, 240, 40, 0.51);
+    border-radius: 50%;
+}
+#fastdeposit{
+    height: 34px;
+    font-size: 13px;
+    border:1px solid black;
+   color:black;
+    background-color: white;
+}
+#fastdeposit:hover{
+    background-color: black;
+    color:green
+}
+#inputfast{
+    border:1px solid black;
+    height: 30px;
+    border-right: none;
+   
+    
+   
+   
+}
+#li4{
+    background-color: rgba(255, 0, 0, 0.197);
+}
+#li5{
+    background-color: rgba(255, 0, 0, 0.204);
+}
+.li1{
+    background-color: rgba(0, 128, 0, 0.217);
+}
+#withdrawarea{
+    padding-top: 8px;
+}
+#withdraw{
+    border:2px solid black;
+    border-right: none;
 }
