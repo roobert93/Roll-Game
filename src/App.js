@@ -124,7 +124,7 @@ const NumberGame = () => {
       setrandoms2(number2);
       setrandoms3(number3);
       if(number === 9 && number2 === 9 && number3 === 9)
-      {setmoney2(+money2 +10000);settext("JACKPOT!!! 10 000$!!!");
+      {setmoney2(+money2 +250);settext("JACKPOT!!! 250$!!!");
       }else if (number === 0 || number2 === 0 || number3 === 0) {
         setmoney2(+money2 - 1);
         settext("You hit 0 lost your bet!");
@@ -202,7 +202,7 @@ const NumberGame = () => {
         </h1>
         <h1>{text}</h1>
         <ul>
-          <li className="li1">If you hit 3x number 9 win jackpot 10 000$!</li>
+          <li className="li1">If you hit 3x number 9 win jackpot 250$!</li>
           <li className="li1">If your total score is 25 and more you win 10$.</li>
           <li className="li1">If your total score is 16 and more you win 2$.</li>
           <li id="li4">If your hit 0 in any field you lost bet.</li>
