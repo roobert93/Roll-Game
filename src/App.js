@@ -16,7 +16,6 @@ const styles = {
   },
   btnon: {
     height: 150,
-    height: 150,
     width: 150,
     borderRadius: "50%",
     fontSize: "30px",
@@ -71,7 +70,7 @@ const NumberGame = () => {
         }
       } else {
         if (+money + +money2 > 100) {
-          alert("You have enought money in game bank");
+          alert("You can not add more like 100$ in game bank.");
           setmoney("");
         } else {
           setmoney2(+money + +money2);
