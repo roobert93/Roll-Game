@@ -71,7 +71,7 @@ const NumberGame = () => {
         }
       } else {
         if (+money + +money2 > 100) {
-          alert("Maximum 100$ in game bank.");
+          alert("You have enought money in game bank");
           setmoney("");
         } else {
           setmoney2(+money + +money2);
