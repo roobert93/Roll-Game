@@ -58,7 +58,7 @@ const NumberGame = () => {
     setrandoms3("");
     
   }
-
+//skuska
   function addmoney() {
     if (money > 0) {
       if (money2 === 0) {
