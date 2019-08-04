@@ -75,6 +75,11 @@ const NumberGame = () => {
     setrandoms("");
     setrandoms2("");
     setrandoms3("");
+    setgreen(null);
+    setgreen2(null);
+    setgreen3(null);
+    setred(null);
+    setred2(null);
     
   }
 
@@ -253,6 +258,7 @@ const NumberGame = () => {
         <button id="fastdeposit" onClick={addmoney}>
           FAST DEPOSIT
         </button>
+       
         <br />
         <br />
         <br />
