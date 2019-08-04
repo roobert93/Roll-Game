@@ -144,6 +144,7 @@ const NumberGame = () => {
   }
 
   function random() {
+    setscores("");
     settext("");
     setgreen(null);
     setgreen2(null);
@@ -154,30 +155,91 @@ const NumberGame = () => {
       const number = Math.floor(Math.random() * 10);
       const number2 = Math.floor(Math.random() * 10);
       const number3 = Math.floor(Math.random() * 10);
+    setTimeout(() => {
       setscores(number + number2 + number3);
-      setrandoms(number);
+    }, 375); 
+      
+        setrandoms(4);
+      setrandoms2(9);
+      setrandoms3(7);
+      
+      setTimeout(() => {
+        setrandoms(8);
+      setrandoms2(1);
+      setrandoms3(4);
+      }, 50);
+      setTimeout(() => {
+        setrandoms(0);
+      setrandoms2(6);
+      setrandoms3(8);
+      }, 100);
+      setTimeout(() => {
+        setrandoms(3);
+      setrandoms2(5);
+      setrandoms3(2);
+      }, 150);
+      setTimeout(() => {
+        setrandoms(0);
+      setrandoms2(9);
+      setrandoms3(2);
+      }, 200);
+      setTimeout(() => {
+        setrandoms(5);
+      setrandoms2(9);
+      setrandoms3(2);
+      }, 250);
+      setTimeout(() => {
+        setrandoms(0);
+      setrandoms2(6);
+      setrandoms3(8);
+      }, 300);
+      setTimeout(() => {
+        setrandoms(1);
+      setrandoms2(3);
+      setrandoms3(4);
+      }, 350);
+      setTimeout(() => {
+        setrandoms(number);
       setrandoms2(number2);
       setrandoms3(number3);
+      }, 375);
+      
+    
       if(number === 9 && number2 === 9 && number3 === 9)
-      {setmoney2(+money2 +250);
+      {setTimeout(() => {
+        setmoney2(+money2 +250);
         settext("JACKPOT!!! 250$!!!");
+      }, 375);
+        
       setgreen(styles.green);
       }else if (number === 0 || number2 === 0 || number3 === 0) {
-        setmoney2(+money2 - 1);
-        settext("You hit 0 lost your bet!");
-        setred(styles.red);
+        setTimeout(() => {
+          setmoney2(+money2 - 1);
+          settext("You hit 0 lost your bet!");
+          setred(styles.red);
+        }, 375);
+      
       } else if (number + number2 + number3 >= 25) {
-        setmoney2(+money2 + 9);
+        setTimeout(() => {
+          setmoney2(+money2 + 9);
         setgreen2(styles.green2);
         settext("You won 10$!");
+        }, 375);
+        
       } else if (number + number2 + number3 >= 16) {
-        setmoney2(+money2 + 1);
-        settext("You won 2$!");
-        setgreen3(styles.green3);
+        setTimeout(() => {
+          setmoney2(+money2 + 1);
+          settext("You won 2$!");
+          setgreen3(styles.green3);
+        }, 375);
+ 
       } else {
-        setmoney2(+money2 - 1);
+        setTimeout(() => {
+          setmoney2(+money2 - 1);
         settext("Small score you lost your bet!");
         setred2(styles.red2);
+        }, 375);
+        
       }
     } else {
       alert(
