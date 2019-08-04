@@ -29,6 +29,21 @@ const styles = {
   },
   gamedivoff: {
     display: "none"
+  },
+  green: {
+    backgroundColor: "rgba(0, 128, 0, 0.802)",
+  },
+  green2: {
+    backgroundColor: "rgba(0, 128, 0, 0.802)",
+  },
+  green3: {
+    backgroundColor: "rgba(0, 128, 0, 0.802)",
+  },
+  red:{
+    backgroundColor: "rgba(255, 0, 0, 0.707)",
+  },
+  red2:{
+    backgroundColor:"rgba(255, 0, 0, 0.707)",
   }
 };
 
@@ -44,6 +59,11 @@ const NumberGame = () => {
   const [scores, setscores] = useState("");
   const [text, settext] = useState("");
   const[moneywithdraw,setmoneywithdraw]= useState("");
+  const [green,setgreen]=useState(null);
+  const [green2,setgreen2]=useState(null);
+  const [green3,setgreen3]=useState(null);
+  const [red,setred]=useState(null);
+  const [red2,setred2]=useState(null);
 
   function clickbtn(e) {
     e.preventDefault();
@@ -120,6 +140,11 @@ const NumberGame = () => {
 
   function random() {
     settext("");
+    setgreen(null);
+    setgreen2(null);
+    setgreen3(null);
+    setred(null);
+    setred2(null);
     if (money2 > 0) {
       const number = Math.floor(Math.random() * 10);
       const number2 = Math.floor(Math.random() * 10);
@@ -129,19 +154,25 @@ const NumberGame = () => {
       setrandoms2(number2);
       setrandoms3(number3);
       if(number === 9 && number2 === 9 && number3 === 9)
-      {setmoney2(+money2 +250);settext("JACKPOT!!! 250$!!!");
+      {setmoney2(+money2 +250);
+        settext("JACKPOT!!! 250$!!!");
+      setgreen(styles.green);
       }else if (number === 0 || number2 === 0 || number3 === 0) {
         setmoney2(+money2 - 1);
         settext("You hit 0 lost your bet!");
+        setred(styles.red);
       } else if (number + number2 + number3 >= 25) {
         setmoney2(+money2 + 9);
+        setgreen2(styles.green2);
         settext("You won 10$!");
       } else if (number + number2 + number3 >= 16) {
         setmoney2(+money2 + 1);
         settext("You won 2$!");
+        setgreen3(styles.green3);
       } else {
         setmoney2(+money2 - 1);
         settext("Small score you lost your bet!");
+        setred2(styles.red2);
       }
     } else {
       alert(
@@ -207,11 +238,11 @@ const NumberGame = () => {
         </h1>
         <h1>{text}</h1>
         <ul>
-          <li className="li1">If you hit 3x number 9 win jackpot 250$!</li>
-          <li className="li1">If your total score is 25 and more you win 10$.</li>
-          <li className="li1">If your total score is 16 and more you win 2$.</li>
-          <li id="li4">If your hit 0 in any field you lost bet.</li>
-          <li id="li5"> If your total score is 15 or less you lost bet.</li>
+          <li style={green}className="li1">If you hit 3x number 9 win jackpot 250$!</li>
+          <li style={green2}className="li1">If your total score is 25 and more you win 10$.</li>
+          <li  style={green3}className="li1">If your total score is 16 and more you win 2$.</li>
+          <li style={red} id="li4">If your hit 0 in any field you lost bet.</li>
+          <li style={red2}id="li5"> If your total score is 15 or less you lost bet.</li>
         </ul>
         <input
           id="inputfast"
