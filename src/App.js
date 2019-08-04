@@ -44,7 +44,8 @@ const styles = {
   },
   red2:{
     backgroundColor:"rgba(255, 0, 0, 0.707)",
-  }
+  },
+
 };
 
 const NumberGame = () => {
@@ -64,6 +65,7 @@ const NumberGame = () => {
   const [green3,setgreen3]=useState(null);
   const [red,setred]=useState(null);
   const [red2,setred2]=useState(null);
+ 
 
   function clickbtn(e) {
     e.preventDefault();
@@ -162,6 +164,7 @@ const NumberGame = () => {
         setrandoms(4);
       setrandoms2(9);
       setrandoms3(7);
+      
       
       setTimeout(() => {
         setrandoms(8);
